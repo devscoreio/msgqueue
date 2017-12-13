@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/go-msgqueue/msgqueue/internal"
+	"github.com/devscoreio/msgqueue/internal"
 )
 
 func init() {

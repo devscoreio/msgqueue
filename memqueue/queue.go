@@ -6,8 +6,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/go-msgqueue/msgqueue"
-	"github.com/go-msgqueue/msgqueue/internal"
+	"github.com/devscoreio/msgqueue"
+	"github.com/devscoreio/msgqueue/internal"
 )
 
 type manager struct{}

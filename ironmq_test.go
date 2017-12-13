@@ -3,8 +3,8 @@ package msgqueue_test
 import (
 	"testing"
 
-	"github.com/go-msgqueue/msgqueue"
-	"github.com/go-msgqueue/msgqueue/ironmq"
+	"github.com/devscoreio/msgqueue"
+	"github.com/devscoreio/msgqueue/ironmq"
 
 	iron_config "github.com/iron-io/iron_go3/config"
 )

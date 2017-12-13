@@ -10,10 +10,10 @@ import (
 	iron_config "github.com/iron-io/iron_go3/config"
 	"github.com/iron-io/iron_go3/mq"
 
-	"github.com/go-msgqueue/msgqueue"
-	"github.com/go-msgqueue/msgqueue/internal"
-	"github.com/go-msgqueue/msgqueue/internal/msgutil"
-	"github.com/go-msgqueue/msgqueue/memqueue"
+	"github.com/devscoreio/msgqueue"
+	"github.com/devscoreio/msgqueue/internal"
+	"github.com/devscoreio/msgqueue/internal/msgutil"
+	"github.com/devscoreio/msgqueue/memqueue"
 )
 
 type manager struct {

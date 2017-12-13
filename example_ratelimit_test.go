@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/go-msgqueue/msgqueue"
-	"github.com/go-msgqueue/msgqueue/memqueue"
+	"github.com/devscoreio/msgqueue"
+	"github.com/devscoreio/msgqueue/memqueue"
 )
 
 type RateLimitError string

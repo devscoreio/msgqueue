@@ -8,8 +8,8 @@ import (
 
 	"golang.org/x/time/rate"
 
-	"github.com/go-msgqueue/msgqueue"
-	"github.com/go-msgqueue/msgqueue/memqueue"
+	"github.com/devscoreio/msgqueue"
+	"github.com/devscoreio/msgqueue/memqueue"
 )
 
 func timeSince(start time.Time) time.Duration {

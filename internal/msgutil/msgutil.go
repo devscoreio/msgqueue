@@ -3,7 +3,7 @@ package msgutil
 import (
 	"fmt"
 
-	"github.com/go-msgqueue/msgqueue"
+	"github.com/devscoreio/msgqueue"
 )
 
 func WrapMessage(msg *msgqueue.Message) *msgqueue.Message {

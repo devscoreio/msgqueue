@@ -12,8 +12,8 @@ import (
 	"github.com/go-redis/redis"
 	"golang.org/x/time/rate"
 
-	"github.com/go-msgqueue/msgqueue"
-	"github.com/go-msgqueue/msgqueue/internal"
+	"github.com/devscoreio/msgqueue"
+	"github.com/devscoreio/msgqueue/internal"
 )
 
 const waitTimeout = time.Second

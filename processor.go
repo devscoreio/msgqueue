@@ -10,7 +10,7 @@ import (
 
 	"github.com/bsm/redis-lock"
 
-	"github.com/go-msgqueue/msgqueue/internal"
+	"github.com/devscoreio/msgqueue/internal"
 )
 
 const timePrecision = time.Microsecond
@@ -29,6 +29,7 @@ type ProcessorStats struct {
 	Processed     uint32
 	Retries       uint32
 	Fails         uint32
+	Deleting      uint32
 	AvgDuration   time.Duration
 	MinDuration   time.Duration
 	MaxDuration   time.Duration
@@ -126,6 +127,7 @@ func (p *Processor) Stats() *ProcessorStats {
 		Processed:     atomic.LoadUint32(&p.processed),
 		Retries:       atomic.LoadUint32(&p.retries),
 		Fails:         atomic.LoadUint32(&p.fails),
+		Deleting:      atomic.LoadUint32(&p.deleting),
 		AvgDuration:   time.Duration(atomic.LoadUint32(&p.avgDuration)) * timePrecision,
 		MinDuration:   time.Duration(atomic.LoadUint32(&p.minDuration)) * timePrecision,
 		MaxDuration:   time.Duration(atomic.LoadUint32(&p.maxDuration)) * timePrecision,
